@@ -6,12 +6,12 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @EnableEurekaClient
-@SpringBootApplication(scanBasePackages = { "br.chronos"})
-@EntityScan(basePackages = "br.chronos.*")
-public class TemplateApplication {
+@SpringBootApplication(scanBasePackages = { "br.chronos", "br.util"})
+@EntityScan(basePackages = {"br.chronos.*", "br.util.*"})
+public class Agendamento2Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TemplateApplication.class, args);
+		SpringApplication.run(Agendamento2Application.class, args);
 	}
 
 }
